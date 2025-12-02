@@ -5,7 +5,7 @@ import { VideoPlayer } from './components/VideoPlayer';
 import { SubtitleList } from './components/SubtitleList';
 import { Button } from './components/Button';
 
-const MAX_FILE_SIZE = 4 * 1024 * 1024 * 1024; // 4GB
+const MAX_FILE_SIZE = 1 * 1024 * 1024 * 1024; // 1GB
 
 export default function App() {
   const [file, setFile] = useState<File | null>(null);
@@ -22,7 +22,7 @@ export default function App() {
     if (!selectedFile) return;
 
     if (selectedFile.size > MAX_FILE_SIZE) {
-      alert("File size exceeds the 4GB limit.");
+      alert("File size exceeds the 1GB limit.");
       return;
     }
 
@@ -98,7 +98,7 @@ export default function App() {
               </svg>
             </div>
             <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-300">
-              Bilingual Subtitle Gen
+              Vlingo - bilingual subtitle
             </h1>
           </div>
           
@@ -140,7 +140,7 @@ export default function App() {
               <p className="text-gray-400 max-w-sm mx-auto">
                 Drag and drop your file here, or click to browse.
                 <br />
-                <span className="text-sm text-gray-500 mt-2 block">Max size 4GB • MP4, MOV, MKV, MP3, WAV</span>
+                <span className="text-sm text-gray-500 mt-2 block">Max size 1GB • MP4, MOV, MKV, MP3, WAV</span>
               </p>
             </div>
           ) : (
