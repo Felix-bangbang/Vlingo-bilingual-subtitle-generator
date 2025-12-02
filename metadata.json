@@ -1,0 +1,5 @@
+{
+  "name": "Bilingual Subtitle Gen",
+  "description": "Automatically generate and translate bilingual subtitles (English/Chinese) for your videos using Gemini 2.5.",
+  "requestFramePermissions": []
+}
