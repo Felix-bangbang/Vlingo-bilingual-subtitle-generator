@@ -1,5 +1,5 @@
 {
-  "name": "Bilingual Subtitle Gen",
+  "name": "Vlingo - bilingual subtitle",
   "description": "Automatically generate and translate bilingual subtitles (English/Chinese) for your videos using Gemini 2.5.",
   "requestFramePermissions": []
 }
